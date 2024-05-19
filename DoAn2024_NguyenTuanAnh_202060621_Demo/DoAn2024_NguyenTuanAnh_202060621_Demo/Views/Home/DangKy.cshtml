@@ -1,0 +1,308 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.User
+@{
+    Layout = null;
+}
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url("../../../../Uploads/UpImages/login2.jpg") no-repeat center center fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    html {
+        color: #333;
+        font-size: 62.5%;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .mains {
+        /* background-color: #85ffbd;
+        background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%); */
+        /* background: #f1f1f1; */
+
+        opacity: 0.9;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form {
+        width: 412px;
+        min-height: 100px;
+        padding: 32px 24px;
+        text-align: center;
+        background: #fff;
+        border-radius: 10px;
+        margin: 24px;
+        align-self: center;
+        box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    }
+
+        .form .heading {
+            font-size: 2rem;
+        }
+
+        .form .desc {
+            text-align: center;
+            color: #636d77;
+            font-size: 1.6rem;
+            font-weight: lighter;
+            line-height: 2.4rem;
+            margin-top: 16px;
+            font-weight: 300;
+        }
+
+    .form-groups {
+        display: flex;
+        margin-bottom: 16px;
+        flex-direction: column;
+    }
+
+    .form-label,
+    .form-message {
+        text-align: left;
+    }
+
+    .form-labels {
+        font-weight: 700;
+        padding-bottom: 6px;
+        line-height: 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    .form-control {
+        height: 40px;
+        padding: 8px 42px;
+        border: 1px solid #b3b3b3;
+        border-radius: 3px;
+        outline: none;
+        font-size: 1.4rem;
+    }
+
+        .form-control:hover {
+            border-color: #0F0F0F;
+        }
+
+    .form-group.invalid .form-control {
+        border-color: #c30005;
+    }
+
+    .form-group.invalid .form-message {
+        color: #c30005;
+    }
+
+    .form-message {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding: 4px 0 0;
+    }
+
+    .form-submit {
+        outline: none;
+        background-color: #E3869A;
+        margin-top: 12px;
+        padding: 12px 16px;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+        .form-submit:hover {
+            background-color: #0F0F0F;
+        }
+
+    .spacer {
+        margin-top: 36px;
+    }
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div class="mains">
+        <div class="form" id="form-1">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h3 class="heading">ĐĂNG KÝ</h3>
+
+
+                <div class="spacer"></div>
+
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-groups">
+                    <label for="fullname" class="form-labels">Tên đầy đủ</label>
+                    <div class="col-md-10">
+
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+
+                <div class="form-groups">
+                    <label for="email" class="form-labels"> Số điện thoại</label>
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-groups">
+                    <label for="email" class="form-labels">Email</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-groups">
+                    <label for="email" class="form-labels">Địa chỉ</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-groups">
+                    <label for="fullname" class="form-labels">Tên tài khoản</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-groups">
+                    <label for="Password" class="form-labels">Mật khẩu</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PassWord, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-groups">
+                    <label for="confirmPassword" class="form-labels">Xác nhận mật khẩu</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control" } })
+                        <br />
+                        @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+                <div class="form-groups">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input class="form-submit" type="submit" name="dangky" value="Đăng ký">
+                        <div class="form-groups">
+                        </div>
+
+                        <a style="margin-top:12px; font-size:14px;" href="/Home/DangNhap">Đăng nhập nếu có tài khoản</a>
+
+                    </div>
+                </div>
+            </div>
+
+            }
+        </div>
+    </div>
+   
+</body>
+</html>
+@*<body>
+
+            <div class="mains">
+                <form action="" method="POST" class="form" id="form-1">
+                    <h3 class="heading">ĐĂNG KÝ</h3>
+
+
+                    <div class="spacer"></div>
+
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Tên đầy đủ</label>
+                        <div class="col-md-10">
+
+                        </div>
+                        <input id="fullname" name="hovaten" type="text" placeholder="VD: Nguyễn Tuấn Anh" class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Tên tài khoản</label>
+                        <input id="fullname" name="taikhoan" type="text" placeholder="VD: kimtanhyung259" class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email"
+                               name="email"
+                               type="text"
+                               placeholder="VD: email@domain.com"
+                               class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password"
+                               name="matkhau"
+                               type="password"
+                               placeholder="Mật khẩu trên 8 ký tự gồm a-z, A-Z, 0-9"
+                               class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                        <input id="password_confirmation"
+                               name="rematkhau"
+                               placeholder="Nhập lại mật khẩu"
+                               type="password"
+                               class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Số điện thoại</label>
+                        <input id="fullname" name="dienthoai" type="text" placeholder="Số điện thoại" class="form-control" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-groups">
+                        <label for="fullname" class="form-label">Địa chỉ</label>
+                        <input id="fullname" name="diachi" type="text" placeholder="Địa chỉ" class="form-control" />
+                        <span class="form-message"></span>
+                        <input class="form-submit" type="submit" name="dangky" value="Đăng ký">
+                         <button class="form-submit" name="dangky" >Đăng ký</button>
+                        <a style="margin-top:12px; font-size:14px;" href="../index.php?quanly=dangnhap">Đăng nhập nếu có tài khoản</a>
+                    </div>
+                </form>
+
+
+            </div>
+        }
+    </body>*@

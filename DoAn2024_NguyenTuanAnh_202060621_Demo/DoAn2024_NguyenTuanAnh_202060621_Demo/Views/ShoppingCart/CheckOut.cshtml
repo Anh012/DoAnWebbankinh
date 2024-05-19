@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+
+            <!-- Breadcrumbs -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>Giỏ hàng</a></li>
+                </ul>
+            </div>
+
+            <!-- Sidebar -->
+            <!-- Main Content -->
+
+            @*@if (ViewBag.nhanVien  !=null)
+            {*@
+                @if (ViewBag.CheckCart != null)
+                {
+                    <div class="row">
+
+                        <div class="col-md-12 text-center">
+                            <h1 class="">Thanh toán</h1>
+                            <p>Bạn hãy kiểm tra lại thông tin đơn hàng cho chính xác!</p>
+                        </div>
+
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div id="show_success"></div>
+                        <div class="col-md-5">
+
+                            @Html.Action("Partial_CheckOut", "Shoppingcart")
+                        </div>
+                        <div class="col-md-4">
+                            @Html.Action("Partial_Item_ThanhToan", "ShoppingCart")
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div>
+                        Bạn chưa có sản phẩm nào. Vui long quay lại trang <a href="/san-pham">sản phẩm</a> để mua hàng.
+                    </div>
+                }
+            @*}
+            else
+            {
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h2>Bạn hãy <a href="~/Home/DangNhap">đăng nhập</a> để mua hàng</h2>
+                        <p>Để quản lý lịch sử mua hàng cũng như theo dõi đơn hàng dễ dàng hơn vui lòng đăng nhập vào hệ thống !</p>
+                    </div>
+
+                </div>
+               
+                <hr />
+            }*@
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+    <script>
+    function OnFailure(rs) {
+            if (!rs.Success) {
+                $('#show_success').html("Bạn mua hàng thất bại! Xin vui lòng thử lại");
+            }
+        }
+        $(document).ready(function () {
+            //$('body').on('change', '#drTypePayment', function () {
+            //    var type = $(this).val();
+            //    $('#load_form_payment').hide();
+            //    if (type == "2") {
+            //        $('#load_form_payment').show();
+            //    }
+            //});
+            $('#myForm').validate({
+                rules: {
+                    'CustomerName': {
+                        required: true
+                    },
+                    'Phone': {
+                        required: true
+                    },
+                    'Address': {
+                        required: true
+                    },
+                    'Email': {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    'CustomerName': 'Vui lòng nhập thông tin',
+                    'Phone': 'Vui lòng nhập thông tin',
+                    'Address': 'Vui lòng nhập thông tin',
+                    'Email': 'Vui lòng nhập thông tin'
+                }
+            });
+        });</script>
+}

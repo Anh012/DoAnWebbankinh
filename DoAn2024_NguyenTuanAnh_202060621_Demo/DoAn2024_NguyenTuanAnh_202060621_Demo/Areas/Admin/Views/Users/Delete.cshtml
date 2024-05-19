@@ -1,0 +1,108 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.User
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Thông tin tài khoản muốn xóa</h3>
+    </div>
+    <div class="card-body">
+        <div class="bs-stepper-content">
+            <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger" align="center">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xác nhận xóa" class="btn btn-sm btn-danger btnDelete" /> |
+                        <a href="/admin/users" class="btn btn-sm btn-light">Quay lại</a>
+                    </div>
+                }
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tên tài khoản
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.UserName)
+                    </dd>
+                    <dt>
+                        Mật khẩu
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.PassWord)
+                    </dd>
+                    <dt>
+                        Quyền
+                    </dt>
+
+                    <dd>
+                        @ViewBag.RoleName
+                    </dd>
+
+                    <dt>
+                        Tên đầy đủ
+
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        Số điện thoại
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Phone)
+                    </dd>
+
+                    <dt>
+                        Email
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+
+
+                    @*<dt>
+            @Html.DisplayNameFor(model => model.ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
+        </dd>*@
+
+                </dl>
+
+               
+            </div>
+        </div>
+    </div>
+    <!-- /.card-body -->
+    @*<div class="card-footer">
+
+        </div>*@
+    <!-- /.card-footer-->
+</div>
+<!-- /.card -->
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('.btnDelete').click(function () {
+                if (confirm("Bạn có chắc muốn xóa bản ghi này không?")) {
+                    return true;
+                }
+                return false;
+            });
+        });
+    </script>
+}

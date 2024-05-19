@@ -1,0 +1,144 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_Order
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Cập nhật đơn hàng</h3>
+        </div>
+        <div class="card-body">
+            <div class="bs-stepper-content">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Id)
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            Người tạo:
+                            <span style="font-weight: normal;">
+                                @Html.HiddenFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DisplayFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                                /
+                                @Html.HiddenFor(model => model.CreatedBy, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DisplayFor(model => model.CreatedBy, "", new { @class = "text-danger" })
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            Ngày tạo:
+                            <span style="font-weight: normal;">
+                                @Html.HiddenFor(model => model.CreatedDate, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DisplayFor(model => model.CreatedDate, "", new { @class = "text-danger" })
+                            </span>
+                        </label>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            Mã đơn hàng:
+
+                            <span style="font-weight: normal;">
+                                @Html.HiddenFor(model => model.Code, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DisplayFor(model => model.Code, "", new { @class = "text-danger" })
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            Tổng tiền:
+                            <span style="font-weight: normal;">
+                                @Html.HiddenFor(model => model.TotalAmount, new { htmlAttributes = new { @class = "form-control" } })
+                                @DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber(Model.TotalAmount, 0) ₫
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            Số sản phẩm:
+                            <span style="font-weight: normal;">
+                                @Html.HiddenFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DisplayFor(model => model.Quantity, "", new { @class = "text-danger" })
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng thái</label>
+                        <div class="col-md-10">
+                            @Html.DropDownList("Status", ViewBag.StatusList as List<SelectListItem>, "Chọn trạng thái", new { @class = "form-control" })
+                            @*@Html.EditorFor(model => model.Modifiedby, new { htmlAttributes = new { @class = "form-control" } })*@
+                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Số điện thoại</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Địa chỉ</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Phương thức thanh toán</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TypePayment, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TypePayment, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Xác nhận</button>
+                            <a href="/admin/Order " class="btn btn-light">Quay lại</a>
+                        </div>
+                    </div>
+                </div>
+                }
+
+
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->

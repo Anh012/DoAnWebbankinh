@@ -1,0 +1,109 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_Order
+@using PagedList;
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Chi tiết đơn hàng</h3>
+        </div>
+        <div class="card-body">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <p><label>Mã đơn hàng:</label>  @Model.Code</p>
+
+                </div>
+            </div>
+            
+                <div class="col-md-6">
+                    <div class="form-group">
+                       
+                        <p ><label>Ngày tạo:</label> @Model.CreatedDate</p>
+                    </div>
+                </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+
+                    <p><label>Họ tên khách:</label> @Model.CustomerName</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+
+                    <p> <label>Số điện thoại:</label> @Model.Phone</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+
+                    <p> <label>Email:</label> @Model.Email</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                   
+                    <p > <label>Tổng tiền:</label> @DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber(Model.TotalAmount, 0) đ</p>
+                </div>
+            </div>
+
+
+
+          
+                <div class="col-md-6">
+                    <div class="form-group">
+
+                        <p>
+                            <label>Trạng thái:</label>   @{
+                                int status = Convert.ToInt32(Model.Status);
+                            }
+                            @if (status == 1)
+                            {
+                                <span>Đang chờ xác nhận </span>
+                            }
+                            else if (status == 2)
+                            {
+                            <span style="color: green;">Đã xác nhận</span>
+                        }
+                        else if (status == 3)
+                        {
+                            <span style="color: orange;">Đã chuyển đơn hàng</span>
+                        }
+                        else if (status == 4)
+                        {
+                            <span style="color: blue;">Hoàn thành</span>
+                        }
+                        else if (status == 5)
+                        {
+                            <span style="color: red;">Hủy đơn</span>
+                        }</p>
+                        </div>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+          
+            <div class="row">
+
+                <div class="col-12">
+                    @Html.Action("Partial_SanPham", "Order", new { id = Model.Id })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->

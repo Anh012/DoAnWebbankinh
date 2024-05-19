@@ -1,0 +1,55 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_Review
+
+
+<div class="add_review">
+    @using (Ajax.BeginForm("PostReview", "tb_Review", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        UpdateTargetId = "load_review",
+        OnSuccess = "OnSuccessRE",
+        OnFailure = "OnFailureRE",
+        OnBegin = "OnBeginRE"
+
+    }, new { @Id = "review_form" }))
+    {
+        <script>function OnBeginRE() {
+                $('#review_submit').attr("disabled", "disabled");
+                $('#load_send').html('<h2>Đang gửi....</h2>');
+            }
+            function OnSuccessRE(res) {
+                debugger;
+                if (res.Success) {
+                    $("#review_form")[0].reset();
+                    window.location.reload();
+                }
+            }</script>
+        @Html.AntiForgeryToken()
+<div>
+    <h1>Thông tin</h1>
+    @Html.TextBoxFor(x => x.FullName, new { @class = "form_input input_name", @placeholder = "Tên khách hàng", @id = "review_name" })
+    @Html.TextBoxFor(x => x.Emaill, new { @class = "form_input input_email", @placeholder = "Email", @id = "review_email" })
+    @Html.HiddenFor(x => x.UserName)
+    @Html.HiddenFor(x => x.ProductId, new { @Value = ViewBag.ProductId })
+   
+    @*<input type="text" id="txtRate" name="Rate" value="4" style="visibility:hidden;" />*@
+    @*<input id="review_name" class="form_input input_name" type="text" name="name" placeholder="Name*" required="required" data-error="Name is required.">*@
+    @*<input id="review_email" class="form_input input_email" type="email" name="email" placeholder="Email*" required="required" data-error="Valid email is required.">*@
+</div>
+<div>
+    <h1>Đánh giá:</h1>
+    @Html.RadioButtonFor(x => x.Rate, "1", new { id = "rate_1" }) <label for="rate_1">Rất tệ</label>
+    @Html.RadioButtonFor(x => x.Rate, "2", new { id = "rate_2" }) <label for="rate_2">Không hài lòng</label>
+    @Html.RadioButtonFor(x => x.Rate, "3", new { id = "rate_3" }) <label for="rate_3">Bình thường</label>
+    @Html.RadioButtonFor(x => x.Rate, "4", new { id = "rate_4" }) <label for="rate_4">Hài lòng</label>
+    @Html.RadioButtonFor(x => x.Rate, "5", new { id = "rate_5" }) <label for="rate_5">Rất hài lòng</label>
+
+
+    @Html.TextAreaFor(x => x.Contentt, new { @class = "input_review", @rows = "4", @placeholder = "Đánh giá của bạn" })
+    @*<textarea id="review_message" class="input_review" name="message" placeholder="Your Review" rows="4" required data-error="Please, leave us a review."></textarea>*@
+</div>
+        <div class="text-left ">
+            <button id="review_submit" type="submit" class="red_button review_submit_btn trans_300" value="Submit">Gửi</button>
+        </div>
+    }
+</div>
+

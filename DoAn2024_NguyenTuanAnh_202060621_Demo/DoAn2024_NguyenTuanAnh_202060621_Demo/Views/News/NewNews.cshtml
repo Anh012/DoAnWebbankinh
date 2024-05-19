@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_News>
+@{
+    Layout = null;
+}
+
+@if (Model != null && Model.Any())
+{
+
+
+    foreach (var item in Model)
+    {
+        <li>
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="@item.Image" style="height:45px; width:45px" alt="">
+                </div>
+                <div class="post-text">
+                    <a href="~/tin-tuc/@item.Alias-@item.Id"> @(item.Title.Length > 14 ? string.Join(" ", item.Title.Split().Take(14)) + "..." : item.Title)</a>
+                </div>
+            </div>
+        </li>
+    }
+}

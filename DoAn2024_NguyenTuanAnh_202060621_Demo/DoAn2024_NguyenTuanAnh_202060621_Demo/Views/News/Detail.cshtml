@@ -1,0 +1,556 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_News
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+<!-- Slider -->
+<style>
+    .tt-main {
+        height: 850px;
+        width: 1200px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .title {
+        /* height: 50px; */
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .tt-col1 {
+        height: 730px;
+        width: 360px;
+        padding: 0px 30px 30px 0px;
+        float: left;
+        border-right: 1px solid #ececec;
+    }
+
+    .ttcol1-search {
+        height: 70px;
+        margin-bottom: 30px;
+    }
+
+        .ttcol1-search input {
+            margin: 15px -3px 15px 0px;
+            height: 40px;
+            width: 230px;
+            float: left;
+            border: 0px;
+            border-radius: 3px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+            border: 1px solid #DDDDDD;
+        }
+
+        .ttcol1-search button {
+            float: left;
+            margin: 10px 0px;
+            height: 50px;
+            width: 50px;
+            background-color: #c30005;
+            border: 0px;
+            border-radius: 0px 3px 3px 0px;
+            cursor: pointer;
+        }
+
+            .ttcol1-search button:hover {
+                background-color: #9C0004;
+            }
+
+            .ttcol1-search button img {
+                display: inline;
+            }
+
+    .ttcol1-post {
+        height: 430px;
+    }
+
+    .post-title {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+        .post-title h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.6;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #1c1c1c;
+        }
+
+    .post-menu {
+        background-color: rgba(221, 221, 221, 0.1);
+        height: 350px;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        padding: 15px;
+        list-style: none;
+    }
+
+        .post-menu li {
+            height: 65px;
+            padding: 10px 0px;
+        }
+
+            .post-menu li .post-box {
+                height: 45px;
+            }
+
+    .post-img {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+
+    .post-text {
+        width: 210px;
+        height: 45px;
+        float: left;
+        margin-left: 12px;
+    }
+
+        .post-text a {
+            color: #444444;
+            font-size: 13px;
+        }
+
+    .border-top {
+        border-top: 1px dashed #ececec;
+    }
+
+
+    .tt-col2 {
+        height: 730px;
+        width: 840px;
+        padding: 0px 30px 30px;
+        float: left;
+    }
+
+    .ttcol2-main {
+        height: 100%;
+        width: 825px;
+        margin: 0px -15px;
+    }
+
+    .ttcol2-block {
+        height: 350px;
+        width: 275px;
+        float: left;
+        padding: 0px 15px 30px 15px;
+    }
+
+
+    .ttcol2-block-main {
+        width: 245px;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+        .ttcol2-block-main:hover .ttblock-content {
+            box-shadow: 0 3px 3px 4px rgba(0,0,0,0.12);
+        }
+
+    .ttblock-img {
+        height: 150px;
+        width: 245px;
+    }
+
+        .ttblock-img img {
+            height: 150px;
+            width: 245px;
+        }
+
+    .ttblock-box {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: -8px;
+        border: 1px solid #c30005;
+        color: #c30005;
+        text-align: center;
+        padding-top: 7px;
+        border-radius: 50%;
+    }
+
+    .box-date {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .box-month {
+        font-size: 14px;
+        font-weight: bolder;
+        line-height: 0.4;
+    }
+
+    .ttcol2-block-main:hover .ttblock-box {
+        background-color: #9C0004;
+        color: white;
+    }
+
+
+
+    .ttblock-content {
+        height: 170px;
+        width: 245px;
+        padding: 15px 20px;
+    }
+
+    .ttblock-title {
+        height: 50px;
+    }
+
+        .ttblock-title h5 {
+            font-size: 18px;
+            line-height: 1.3;
+            color: #1c1c1c;
+        }
+
+    .divider {
+        margin: 8px 0;
+        height: 2px;
+        width: 30px;
+        background-color: #c30005;
+    }
+
+
+    .ttblock-text {
+        height: 65px;
+        font-size: 17px;
+        text-align: justify;
+        color: #666666;
+    }
+    .ct-container {
+        height: 100%;
+    }
+    .ct-mains {
+        height: 1600px;
+    }
+    .ct-col2 {
+        height: 100%;
+        width: 840px;
+        float: left;
+        padding: 20px 0px 30px 30px;
+    }
+    .ct-top-title {
+        width: 100%;
+        padding: 30px 30px 10px;
+    }
+    .ctcol2-main {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ctcol2-top {
+        /* height: 1350px; */
+        width: 100%;
+        box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+        .ctcol2-top:hover {
+            box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.12);
+        }
+    .ct-top-title h1 {
+        color: #1c1c1c;
+        font-size: 34px;
+        line-height: 1.3;
+        margin: 5px 0px 17px;
+    }
+    .ct-top-img {
+        height: 810px;
+        height: 606px;
+    }
+
+    .big {
+        height: 3px;
+        margin-left: 30px;
+    }
+
+    .ct-top-main {
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .ct-top-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+        .ct-top-text h3 {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 25px;
+        }
+
+        .ct-top-text p {
+            margin: 0px;
+            color: #353535;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+    .ct-top-social {
+        height: 100px;
+    }
+
+    .social {
+        list-style: none;
+        padding: 32.5px 5px;
+    }
+
+        .social li {
+            height: 35px;
+            float: left;
+            margin-left: 5px;
+            padding: 3px 5px;
+            border-radius: 3px;
+        }
+
+            .social li a img {
+                margin-right: 5px;
+            }
+
+            .social li a {
+                margin: 0px 5px;
+                font-size: 14px;
+                color: white;
+                display: flex;
+                align-items: center;
+                position: relative;
+                top: 3px;
+            }
+
+        .social:hover li {
+            opacity: 0.4;
+        }
+
+
+        .social li:hover {
+            opacity: 1;
+        }
+
+    .fb {
+        background-color: #4769A5;
+        border-bottom: 4px solid #314b83;
+    }
+
+    .twitter {
+        background-color: #65CCEF;
+        border-bottom: 4px solid #0092ba;
+    }
+
+    .google {
+        background-color: #EA4335;
+        border-bottom: 4px solid #ab2b1d;
+    }
+
+    .pinter {
+        background-color: #cd252b;
+        border-bottom: 4px solid #ae1319;
+    }
+
+    .linkedln {
+        background-color: #2ba3e1;
+        border-bottom: 4px solid #278cc0;
+    }
+
+    .ct-top-next {
+        height: 75px;
+        margin-top: 10px;
+        padding: 15px 0px;
+        border-top: 1px solid #ececec;
+    }
+
+    .ctprev, .ctnext {
+        float: left;
+        line-height: 45px;
+        width: 50%;
+    }
+
+        .ctprev a, .ctnext a {
+            font-size: 24px;
+            color: #334862;
+        }
+
+            .ctprev a:hover, .ctnext a:hover {
+                color: #000000;
+            }
+
+    .ctnext {
+        border-left: 1px solid #ececec;
+        text-align: right;
+    }
+
+    .ctcol2-bot {
+        background-color: #F2F2F2;
+        height: 440px;
+        width: 100%;
+        margin: 30px 0px;
+        padding: 15px 25px 0px;
+    }
+
+        .ctcol2-bot h3 {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #1c1c1c;
+            margin-bottom: 15px;
+        }
+
+    .respond-form {
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .form-note {
+        font-size: 19px;
+    }
+
+    .respond-form label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #222;
+    }
+
+    .respond-form textarea, .respond-form input {
+        border: 1px solid #ddd;
+        padding: 15px;
+        padding-bottom: 0px;
+        height: 100px;
+        width: 100%;
+        vertical-align: middle;
+        outline: none;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+        .respond-form textarea:hover, .respond-form input:hover {
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+    .form-comment {
+        margin-bottom: 15px;
+    }
+
+
+    .form-name {
+        width: 33.33333%;
+        float: left;
+        margin-bottom: 15px;
+        height: 80px;
+    }
+
+    .respond-form input {
+        height: 45px;
+        padding-top: 0px;
+    }
+
+    .padding-right {
+        padding-right: 30px;
+    }
+
+    .form-submit input {
+        width: 130px;
+        background-color: #c30005;
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 5px 15px;
+    }
+
+        .form-submit input:hover {
+            background-color: #9C0004;
+        }
+</style>
+<div class="container product_section_container">
+    <div class="breadcrumbs d-flex flex-row align-items-center">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/tin-tuc"><i class="fa fa-angle-right" aria-hidden="true"></i>Tin tức</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="tt-main ct-mains">
+            <div class="tt-col1 .ct-col1">
+
+                <div class="ttcol1-post">
+                    <div class="post-title">
+                        <h3>Tin tức mới</h3>
+                    </div>
+                    <ul class="post-menu">
+                        @Html.Action("NewNews", "News")
+                    </ul>
+                </div>
+            </div>
+            @if (Model != null)
+            {
+                <div class="ct-col2">
+                    <div class="ctcol2-main">
+                        <div class="ctcol2-top">
+                            <div class="ct-top-title">
+
+                                <h1>@Model.Title</h1>
+                                <h6>@Model.CreatedDate</h6> 
+                            </div>
+                            <div class="divider big"></div>
+                            <div class="ct-top-img">
+                                <img src="@Model.Image" width="810px" alt="">
+                            </div>
+                            <div class="ct-top-main">
+                                @*<div class="ct-top-text">
+                                    @Model.Description
+                                </div>*@
+                              
+                                <div class="ct-top-text">
+                                    @Html.Raw(Model.Detail)
+                                </div>
+                                <div class="ct-top-social">
+                                    <ul class="social">
+                                        <li class="fb">
+                                            <a href="#"><img src="~/Uploads/UpImages/fb.PNG" height="20px" width="20px" alt="">Facebook</a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><img src="~/Uploads/UpImages/twitter.PNG" height="20px" width="20px" alt="">Twitter</a>
+                                        </li>
+                                        <li class="google">
+                                            <a href="#"><img src="~/Uploads/UpImages/google.PNG" height="20px" width="20px" alt="">Google +</a>
+                                        </li>
+                                        <li class="pinter">
+                                            <a href="#"><img src="~/Uploads/UpImages/pinter.PNG" height="20px" width="20px" alt="">Pinterest</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                                @*<div class="ct-top-next">
+                                    <div class="ctprev">
+                                        <a href="CTtintuc.html"> &#10094; Xinh xắn nhất những ngày này...</a>
+                                    </div>
+                                    <div class="ctnext">
+                                        <a href="CTtintuc.html">  Xinh xắn nhất những ngày này... &#10095;</a>
+                                    </div>
+                                </div>*@
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+
+</div>

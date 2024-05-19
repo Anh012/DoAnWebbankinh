@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thông tin đơn hàng từ {{TenKhachHang}}</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f9f9f9;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 20px auto;
+			background-color: #ffffff;
+			border: 1px solid #dedede;
+			border-radius: 3px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.header {
+			background-color: #F4A8BC;
+			color: #ffffff;
+			padding: 20px;
+			border-radius: 3px 3px 0 0;
+		}
+
+		.content {
+			padding: 20px;
+		}
+
+			.content p {
+				margin-bottom: 10px;
+			}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			border: 1px solid #e5e5e5;
+			padding: 10px;
+		}
+
+		th {
+			background-color: #f5f5f5;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		.footer {
+			background-color: #f5f5f5;
+			padding: 20px;
+			border-radius: 0 0 3px 3px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Thông tin đơn hàng từ {{TenKhachHang}}</h1>
+		</div>
+		<div class="content">
+			
+			<h2>Đơn hàng #{{MaDon}} ({{NgayDat}})</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Sản phẩm</th>
+						<th>Mã sản phẩm</th>
+						<th>Số lượng</th>
+						<th>Giá</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{SanPham}}
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="2">Nguyên giá:</th>
+						<td>{{ThanhTien}} ₫</td>
+					</tr>
+					<tr>
+						<th colspan="2">Tổng cộng:</th>
+						<td>{{TongTien}} ₫</td>
+					</tr>
+				</tfoot>
+			</table>
+			<h2>Thông tin người nhận</h2>
+			<address>
+				{{TenKhachHang}}
+				<br>{{DiaChiNhanHang}}
+
+				<br>
+				<a href="tel:{{Phone}}" style="color:#96588a;">{{Phone}}</a><br>
+				<a href="mailto:{{Email}}" style="color:#96588a;">{{Email}}</a>
+			</address>
+			
+		</div>
+		<div class="footer">
+			<!--<a href="https://localhost:44343/admin/home">Trang quản lý</a>-->
+		</div>
+	</div>
+</body>
+</html>

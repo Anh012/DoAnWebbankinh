@@ -1,0 +1,290 @@
+﻿
+@{
+    ViewBag.Title = "Introduce";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+<style>
+    .gt-banner {
+        min-height: 200px;
+        max-width: 100%;
+        background-color: #414141;
+    }
+
+    .gt-banner-content {
+        height: 200px;
+        width: 1200px;
+        margin: auto;
+        background-color: black;
+    }
+
+    .gt-banner-img {
+        height: 200px;
+        width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+    }
+
+        .gt-banner-img img {
+            width: 100%;
+            min-height: 200px;
+            opacity: 0.8;
+            position: relative;
+            bottom: 200px;
+        }
+
+    .gt-banner-block {
+        height: 200px;
+        width: 1200px;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        padding: 40px 400px;
+    }
+
+    .gt-banner-title {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    .gt-banner-text {
+        padding: 10px 0px;
+        display: block;
+        font-size: 20px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+    }
+
+        .gt-banner-text a {
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .content-img {
+        width: 380px;
+        height: 500px;
+    }
+
+    .content-main {
+        width: 800px;
+        padding-left: 8px;
+    }
+
+    .main-top {
+        background-color: aliceblue;
+    }
+
+    .main-title {
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-weight: bolder;
+    }
+
+    .main-text {
+        padding-bottom: 15px;
+        color: #353535;
+        line-height: 1.6;
+    }
+
+    .main-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col {
+        height: 240px;
+        padding-bottom: 20px;
+    }
+
+    /*.col-right {
+        padding-right: 40px;
+        border-right: double #F4A8BC;
+    }
+
+    .col-left {
+        padding-left: 40px;
+        border-left: #F4A8BC;
+    }*/
+
+    .list {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        display: flex;
+        width: 590px;
+    }
+
+    .item-img {
+        width: 60px;
+    }
+
+    .item-main {
+        width: 530px;
+        padding-left: 10px;
+    
+    }
+    .gap {
+        height: 40px;
+        width: 100%;
+    }
+</style>
+<div class="container product_section_container">
+    <div class="breadcrumbs d-flex flex-row align-items-center">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/gioi-thieu"><i class="fa fa-angle-right" aria-hidden="true"></i>Giới thiệu</a></li>
+        </ul>
+    </div>
+    <div class="container">       
+        <div class="gt-banner">
+            <div class="gt-banner-content">
+                <div class="gt-banner-img">
+                    
+                    <img src="~/Uploads/UpImages/Introduce/i1.jpg"  alt="">
+                    <div class="gt-banner-block">
+                        <div class="gt-banner-title">
+
+                        </div>
+                        @*<div class="gt-banner-text">
+                <a href="Trangchu.html">Trang chủ </a>
+                <span class="gach_ngang"> / </span>
+                Tin tức
+            </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="content">
+            <div class="content-img">
+                <img src="~/Uploads/UpImages/Introduce/gioithieu.png" style=" max-height: 491px; max-width: 380px">
+            </div>
+            <div class="content-main">
+                <h3 class="main-title">GIỚI THIỆU</h3>
+                <p class="main-text">
+                    Thành lập từ tháng 07 năm 2018, TixCo là thương hiệu gọng kính đương đại với các sản phẩm được thiết kế tại Hà Nội, Việt Nam.
+
+                    Định vị là một studio thiết kế sản phẩm gọng kính, chúng tôi tập trung nghiên cứu hình khối, cấu trúc mới trong sản phẩm gọng kính, lấy ý tưởng từ những vật phẩm công nghiệp và từ chính đặc tính thô tự nhiên của chất liệu Cellulose Acetate. Sản phẩm được chăm chút tỉ mỉ bởi bàn tay của những nghệ nhân lành nghề có kinh nghiệm chế tác lâu năm, với nguồn vật liệu cao cấp nhất và quy trình kiểm soát chất lượng kép, đem đến một sản phẩm gọng kính có thể đi cùng bạn trong nhiều năm.
+                   
+                </p>
+                <h3 class="main-title">SẢN PHẨM KÍNH TỐT NHẤT</h3>
+                <div class="main-row">
+                    <div class=" col-right">
+                        <p class="main-text">
+                            TixCo là điểm đến lý tưởng cho những ai đang tìm kiếm các loại kính chất lượng cao với một loạt các kiểu dáng và thương hiệu đa dạng.
+                            Tại TixCo, chúng tôi tự hào cung cấp các sản phẩm kính đa dạng từ kính mát, kính cận cho đến kính mát chống UV, đáp ứng mọi nhu cầu của khách hàng.
+                            Với không gian mua sắm thoải mái và dịch vụ tư vấn chuyên nghiệp, TixCo cam kết mang lại trải nghiệm mua sắm tuyệt vời và hài lòng cho mọi khách hàng.
+                        </p>
+                    </div>
+                    @*<div class="col col-left">
+                        <p class="main-text">Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</p>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="list">
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/ship.png" />
+                    
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Miễn phí giao hàng
+                    </div>
+                    <p class="main-text">
+                        Chúng tôi cam kết mang lại trải nghiệm mua sắm trực tuyến hoàn hảo và tiện lợi nhất cho bạn. Không cần lo lắng về chi phí vận chuyển, bạn có thể thoải mái lựa chọn sản phẩm yêu thích và nhận được chúng tận nhà một cách nhanh chóng và an toàn.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/doitra.png" />
+                  
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Đổi trả trong vòng 7 ngày
+                    </div>
+                    <p class="main-text">
+                        Chúng tôi hiểu rằng việc mua sắm trực tuyến có thể gây ra một số lo lắng về sự phù hợp của sản phẩm. Vì vậy, chúng tôi mang đến cho bạn sự an tâm với chính sách đổi trả linh hoạt trong vòng 7 ngày kể từ khi nhận hàng.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/new-product.png" />
+                   
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Sản phẩm mới 100%
+                    </div>
+                    <p class="main-text">
+                        Chúng tôi tự hào giới thiệu các sản phẩm hoàn toàn mới, chưa từng qua sử dụng, đảm bảo chất lượng và tính nguyên vẹn tuyệt đối.Với cam kết này, bạn có thể hoàn toàn yên tâm khi lựa chọn những sản phẩm mới nhất từ chúng tôi.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/chat.png" />
+                   
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Chăm sóc khách hàng
+                    </div>
+                    <p class="main-text">
+                      Chúng tôi không chỉ cung cấp các sản phẩm chất lượng mà còn cam kết đem lại trải nghiệm mua sắm tuyệt vời nhất cho bạn. Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn mọi lúc, mọi nơi.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/baove.png" />                   
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Hàng chính hãng
+                    </div>
+                    <p class="main-text">
+                        Chúng tôi tự hào là địa chỉ đáng tin cậy để bạn tìm kiếm những sản phẩm chính hãng, với một loạt các thương hiệu uy tín trên thị trường. Tại đây, mỗi sản phẩm được bán đều đi kèm với đầy đủ bảo hành và cam kết về nguồn gốc, giúp bạn hoàn toàn yên tâm về chất lượng và xuất xứ của sản phẩm.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="~/Uploads/UpImages/Introduce/thanhtoan.png" />
+                   
+                </div>
+                <div class="item-main">
+                    <div class="main-title">
+                        Thanh toán đa dạng
+                    </div>
+                    <p class="main-text">
+                        Chúng tôi hiểu rằng mỗi khách hàng có những phương thức thanh toán ưa thích riêng, vì vậy chúng tôi cung cấp nhiều lựa chọn thanh toán khác nhau như thanh toán bằng thẻ tín dụng, chuyển khoản ngân hàng, thanh toán khi nhận hàng (COD).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

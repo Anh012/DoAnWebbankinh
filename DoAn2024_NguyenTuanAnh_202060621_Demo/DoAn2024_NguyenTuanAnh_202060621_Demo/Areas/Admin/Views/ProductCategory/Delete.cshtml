@@ -1,0 +1,148 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_ProductCategory
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Thông tin danh mục sản phẩm muốn xóa</h3>
+    </div>
+    <div class="card-body">
+        <div class="bs-stepper-content">
+            <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger" align="center">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xác nhận xóa" class="btn btn-sm btn-danger btnDelete" /> |
+                        <a href="~/admin/ProductCategory" class="btn btn-sm btn-light">Quay lại</a>
+                    </div>
+                }
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tiêu đề
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Title)
+                    </dd>
+                    @*<dt>
+                        Alias
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Alias)
+                    </dd>*@
+                    <dt>
+                        Ảnh danh mục
+                    </dt>
+
+                    <dd>
+                        <img src="@Url.Content(Model.Icon)" alt="Ảnh đại diện" style="max-width: 200px; max-height: 200px;" />
+
+                    </dd>
+                    <dt>
+                        Mô tả
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+
+
+                    @*<dt>
+                        @Html.DisplayNameFor(model => model.SeoTitle)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoTitle)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SeoDescription)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoDescription)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SeoKeywords)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoKeywords)
+                    </dd>*@
+
+                    <dt>
+                        Người tạo
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedBy)
+                    </dd>
+
+                    <dt>
+                        Ngày tạo
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedDate)
+                    </dd>
+                    <dt>
+                        Người sửa đổi
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Modifiedby)
+                    </dd>
+                    <dt>
+                        Ngày sửa đổi
+                    </dt>
+
+                    <dd>
+                        @if (Model.ModifiedDate != Model.CreatedDate)
+                        {
+                            @Html.DisplayFor(model => model.ModifiedDate)
+                        }
+                        else
+                        {
+                            @:&nbsp;
+                        }
+                    </dd>
+
+
+
+
+
+                </dl>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- /.card-body -->
+    @*<div class="card-footer">
+
+        </div>*@
+    <!-- /.card-footer-->
+</div>
+<!-- /.card -->
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('.btnDelete').click(function () {
+                if (confirm("Bạn có chắc muốn xóa bản ghi này không?")) {
+                    return true;
+                }
+                return false;
+            });
+        });
+    </script>
+}

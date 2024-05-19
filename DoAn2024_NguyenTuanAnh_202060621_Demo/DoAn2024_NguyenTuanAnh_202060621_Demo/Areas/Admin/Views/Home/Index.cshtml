@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<!--<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Blank Page</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Blank Page</li>
+                </ol>
+            </div>
+        </div>
+    </div>-->
+<!-- /.container-fluid -->
+<!--</section>-->
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+
+            @{
+                var user = (DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.User)HttpContext.Current.Session["user"];
+
+
+                if (user != null)
+                {
+                    <h3 class="card-title">
+                        Chào <b> @user.Name </b>  đến với trang quản trị
+                    </h3>
+                }
+                else
+                {
+                    <h3 class="card-title">
+                        Chào bạn đến với trang quản trị
+                    </h3>
+                }
+
+
+
+
+            }
+
+
+            @*<div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>*@
+        </div>
+
+
+        <img src="~/Uploads/UpImages/1.png" alt="Your Image">
+
+        <!-- /.card-body -->
+        <div class="card-footer">
+            Footer
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->

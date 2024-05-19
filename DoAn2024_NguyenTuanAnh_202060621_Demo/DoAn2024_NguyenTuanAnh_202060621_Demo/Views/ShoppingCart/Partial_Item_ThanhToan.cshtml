@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DoAn2024_NguyenTuanAnh_202060621_Demo.Models.Cart.ShoppingCartItem>
+
+
+@if (Model != null && Model.Any())
+{
+    <h3>GIỎ HÀNG <small>@*(@Model.Count())*@</small></h3>
+
+    var tongtien = decimal.Zero;
+    <div>
+        <table class="table">
+            @foreach (var item in Model)
+            {
+                tongtien += item.TotalPrice;
+                <tr>
+
+                    <td>@item.ProductName (@item.Quantity)</td>
+
+                    <td>@DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber((@item.Quantity * @item.Price), 0) ₫</td>
+
+                </tr>
+            }
+            <tr>
+                <td>Tổng tiền</td>
+                <td>@DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber((@tongtien), 0) ₫</td>
+            </tr>
+        </table>
+    </div>
+
+}
+else
+{
+    <div><h2>Loi gio hang</h2></div>
+}
+
+
+

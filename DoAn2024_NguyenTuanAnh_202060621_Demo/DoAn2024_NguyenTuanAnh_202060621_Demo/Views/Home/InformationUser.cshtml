@@ -1,0 +1,220 @@
+﻿@model IEnumerable<DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.User>
+
+@{
+    ViewBag.Title = "InformationUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+<div class="container product_section_container">
+    <div class="breadcrumbs d-flex flex-row align-items-center">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/thong-tin"><i class="fa fa-angle-right" aria-hidden="true"></i>Thông tin người dùng</a></li>
+        </ul>
+    </div>
+
+    <h3>Thông tin người dùng</h3>
+    <div>
+        <p><strong>Tên người dùng:</strong> @ViewBag.User.Name</p>
+        <p><strong>Số điện thoại:</strong> @ViewBag.User.Phone</p>
+        <p><strong>Email:</strong> @ViewBag.User.Email</p>
+        <p><strong>Địa chỉ:</strong> @ViewBag.User.Address</p>
+        @*<p><strong>Tên tài khoản:</strong> @ViewBag.User.UserName</p>*@
+
+
+    </div>
+
+    <h3>Đơn hàng</h3>
+    <table>
+        <tr>
+            <th>Mã đơn hàng</th>
+            <th>Chi tiết đơn hàng</th>
+            <th>Tình trạng</th>
+            <th></th>
+        </tr>
+        @if (ViewBag.Orders != null)
+        {
+            for (int i = 0; i < ViewBag.Orders.Count; i++)
+            {
+                <tr>
+                    <td>
+                        @ViewBag.Orders[i].Code
+                        <!-- Thêm các thuộc tính khác của đơn hàng nếu cần -->
+                    </td>
+                    <td>
+                        @if (ViewBag.OrderDetails != null && ViewBag.OrderDetails.Count > 0)
+                        {
+                            <ul>
+                                @foreach (var detail in ViewBag.OrderDetails)
+                                {
+                                    if (detail.OrderId == ViewBag.Orders[i].Id)
+                                    {
+                                        @*<li>@detail.Id</li>*@
+                                        <!-- Thêm các thuộc tính khác của chi tiết đơn hàng nếu cần -->
+                                        if (ViewBag.Products != null && ViewBag.Products.Count > 0)
+                                        {
+                                            foreach (var product in ViewBag.Products)
+                                            {
+                                                if (product.Id == detail.ProductId)
+                                                {
+                                                    <strong>Tên hàng:</strong>
+                                                    <a href="/chi-tiet/@product.Alias-@product.Id">
+                                                        @product.Title
+                                                    </a>
+                                                    @*@product.Title*@
+                                                    <span> <strong>(</strong>@detail.Quantity<strong>)   </strong></span>
+                                                    <strong> Mã hàng:</strong>
+                                                    @product.ProductCode
+
+                                                    <strong>Giá:</strong>
+                                                    <span>@DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber((product.Price), 0) ₫ </span>
+                                                    <br />
+
+                                                    break;
+                                                }
+
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            <p>Không có sản phẩm.</p>
+                                        }
+                                    }
+                                }
+
+                                <strong>Ngày đặt:</strong>
+                                <span>@(ViewBag.Orders[i].CreatedDate) </span>
+                                <strong>Tổng giá:</strong>
+                                <span>@DoAn2024_NguyenTuanAnh_202060621_Demo.Common.Common.FormatNumber((ViewBag.Orders[i].TotalAmount), 0) ₫ </span>
+                            </ul>
+
+                        }
+
+                        else
+                        {
+                            <p>Không có chi tiết đơn hàng.</p>
+                        }
+                    </td>
+                    @{
+                        int status = Convert.ToInt32(ViewBag.Orders[i].Status);
+                    }
+
+                    <td>
+                        @if (status == 1)
+                        {
+                            <p>Đang chờ xác nhận</p>
+                        }
+                        else if (status == 2)
+                        {
+                            <p style="color: green;">Đã xác nhận</p>
+                        }
+                        else if (status == 3)
+                        {
+                            <p style="color: orange;">Đã chuyển đơn hàng</p>
+                        }
+                        else if (status == 4)
+                        {
+                            <p style="color: blue;">Hoàn thành</p>
+                        }
+                        else if (status == 5)
+                        {
+                            <p style="color: red;">Hủy đơn</p>
+                        }
+                    </td>
+                    @{
+                        int statuss = Convert.ToInt32(ViewBag.Orders[i].Status);
+                    }
+
+                <td>
+                    @if (statuss == 1 ||statuss == 2)
+                    {
+
+                        <p><a href="#" data-id="@ViewBag.Orders[i].Id" class="btn btn-sm btn-danger btnXoaAnh">Hủy đơn hàng</a></p>
+                    }
+                    else if (statuss == 4)
+                    {
+                        <p>Hãy đánh giá sản phẩm chúng tôi.</p>
+                    }
+                    else { }
+
+                </td>
+                    @*@if (statuss == 1 && statuss == 2)
+                    {
+                        <td class="text-center"><a href="#" data-id="@ViewBag.Orders[i].Id" class="btn btn-sm btn-danger btnXoaAnh">Hủy đơn hàng</a></td>
+                    }
+                    else
+                    {
+
+                        <td>  @ViewBag.Orders[i].Status</td>
+                    }
+                    <td class="text-center"><a href="#" data-id="@ViewBag.Orders[i].Id" class="btn btn-sm btn-danger btnXoaAnh">Hủy đơn hàng</a></td>*@
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">
+                    <p>Không có đơn hàng.</p>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+</div>
+@section  scripts{
+    <script>
+        $(document).ready(function () {
+            $('.btnXoaAnh').click(function (e) {
+                e.preventDefault(); 
+
+                var orderId = $(this).data('id'); 
+                var confirmed = confirm('Bạn có chắc chắn muốn hủy đơn hàng không?');
+                if (!confirmed) {
+                    return; // Do nothing if user cancels
+                }
+                $.ajax({
+                    url: '/Home/Cancel', 
+                    type: 'POST',
+                    data: { id: orderId }, 
+                    success: function (response) {
+                        if (response.success) {
+                          
+                            alert('Đơn hàng đã được hủy thành công!');
+                          
+                            location.reload(); 
+                        } else {
+                           
+                            alert('Không thể hủy đơn hàng. Vui lòng thử lại sau.');
+                        }
+                    },
+                    error: function () {
+                       
+                        alert('Đã xảy ra lỗi trong quá trình xử lý. Vui lòng thử lại sau.');
+                    }
+                });
+            });
+        });
+
+    </script> }

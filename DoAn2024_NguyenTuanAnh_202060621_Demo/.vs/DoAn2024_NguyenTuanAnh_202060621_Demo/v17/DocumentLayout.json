@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\areas\\admin\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\areas\\admin\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\tb_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\tb_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\outofstock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\outofstock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_item_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_item_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_item_thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\shoppingcart\\partial_item_thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\useroder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\useroder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\tb_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\models\\autoadd\\tb_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|c:\\users\\tix\\desktop\\demo2\\doan2024_nguyentuananh_202060621_demo\\doan2024_nguyentuananh_202060621_demo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C48D7D8F-47FF-4986-9BF1-713682571936}|DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo.csproj|solutionrelative:doan2024_nguyentuananh_202060621_demo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAAAOMAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T17:17:43.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGQAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T17:15:38.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAEcAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T17:03:57.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tb_Product.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Product.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Product.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Product.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Product.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwBwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:53:55.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\CheckOut.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\CheckOut.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\CheckOut.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\CheckOut.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:07:24.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAcwNsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:06:48.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OutOfStock.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\OutOfStock.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\OutOfStock.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\OutOfStock.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\OutOfStock.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:06:37.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Partial_CheckOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_CheckOut.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_CheckOut.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_CheckOut.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_CheckOut.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:06:30.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Partial_Item_Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:06:26.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Partial_Item_ThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:06:23.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserRole.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserRole.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserRole.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:05:57.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserOder.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserOder.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserOder.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserOder.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\UserOder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:05:56.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\User.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\User.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\User.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\User.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA5wCMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:05:50.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\OrderViewModel.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\OrderViewModel.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\OrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:05:34.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "tb_Order.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Order.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Order.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Order.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Models\\AutoAdd\\tb_Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:05:28.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAAI4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:09:23.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\Home\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\Home\\DangNhap.cshtml",
+              "ToolTip": "C:\\Users\\TiX\\Desktop\\Demo2\\DoAn2024_NguyenTuanAnh_202060621_Demo\\DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\Home\\DangNhap.cshtml",
+              "RelativeToolTip": "DoAn2024_NguyenTuanAnh_202060621_Demo\\Views\\Home\\DangNhap.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAKsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T14:07:41.902Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

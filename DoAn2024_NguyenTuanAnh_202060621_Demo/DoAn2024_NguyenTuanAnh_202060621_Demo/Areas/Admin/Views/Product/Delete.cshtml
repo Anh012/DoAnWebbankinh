@@ -1,0 +1,244 @@
+﻿@model DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Thông tin bài đăng muốn xóa</h3>
+    </div>
+    <div class="card-body">
+        <div class="bs-stepper-content">
+            <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger" align="center">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xác nhận xóa" class="btn btn-sm btn-danger btnDelete" /> |
+                        <a href="~/admin/Product" class="btn btn-sm btn-light">Quay lại</a>
+                    </div>
+                }
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        Danh mục
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.tb_ProductCategory.Title)
+                    </dd>
+
+                    <dt>
+                        Tên sản phẩm
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Title)
+                    </dd>
+
+                    <dt>
+                        Mã sản phẩm
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ProductCode)
+                    </dd>
+
+                    <dt>
+                        Mô tả
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+
+                    @*<dt>
+            Chi tiết
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detail)
+        </dd>*@
+                    <dt>
+                        Ảnh 
+                    </dt>
+                    <dt>
+                        @if (!string.IsNullOrEmpty(ViewBag.strImg))
+                        {
+                            <img src="@Url.Content(ViewBag.strImg)" alt="Ảnh đại diện" style="max-width: 200px; max-height: 200px;" />}
+                            @*<img src="@Url.Content(Model.Image)" alt="Ảnh đại diện" style="max-width: 200px; max-height: 200px;" />*@
+                        </dt>
+
+                    @*<dd>
+                        @Html.DisplayFor(model => model.Image)
+                    </dd>*@
+
+                    <dt>
+                        Giá
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Price)
+                    </dd>
+
+                    <dt>
+                        Giá Sale
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.PriceSale)
+                    </dd>
+
+                    <dt>
+                        Số lượng
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Quantity)
+                    </dd>
+
+                    <dt>
+                        Home
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.IsHome)
+                    </dd>
+
+                    <dt>
+                        Sale
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.IsSale)
+                    </dd>
+
+                    <dt>
+                        New
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.IsFeature)
+                    </dd>
+
+                    <dt>
+                        Hot
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.IsHot)
+                    </dd>
+
+                    @*<dt>
+                        SeoTitle
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoTitle)
+                    </dd>
+
+                    <dt>
+                        SeoDescription
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoDescription)
+                    </dd>
+
+                    <dt>
+                        SeoKeywords
+                    </dt>*@
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SeoKeywords)
+                    </dd>
+
+                    <dt>
+                        Người tạo
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedBy)
+                    </dd>
+
+                    <dt>
+                        Ngày tạo
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreatedDate)
+                    </dd>
+                    <dt>
+                        Người sửa đổi
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Modifiedby)
+                    </dd>
+                    <dt>
+                        Ngày sửa đổi
+                    </dt>
+
+                    <dd>
+                        @if (Model.ModifiedDate != Model.CreatedDate)
+                        {
+                            @Html.DisplayFor(model => model.ModifiedDate)
+                        }
+                        else
+                        {
+                            @:&nbsp;
+                        }
+                    </dd>
+
+                    <dt>
+                        Alias
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Alias)
+                    </dd>
+
+                    <dt>
+                        Hiển thị
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.IsActive)
+                    </dd>
+
+                    <dt>
+                        Lượt xem
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ViewCount)
+                    </dd>
+
+                </dl>
+
+            </div>
+        </div>
+        <!-- /.card-body -->
+        @*<div class="card-footer">
+
+            </div>*@
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('.btnDelete').click(function () {
+                if (confirm("Bạn có chắc muốn xóa bản ghi này không?")) {
+                    return true;
+                }
+                return false;
+            });
+        });
+    </script>
+}

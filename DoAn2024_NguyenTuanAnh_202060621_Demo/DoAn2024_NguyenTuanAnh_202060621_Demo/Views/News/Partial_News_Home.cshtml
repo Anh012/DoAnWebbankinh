@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DoAn2024_NguyenTuanAnh_202060621_Demo.Models.AutoAdd.tb_News>
+@if (Model != null && Model.Any())
+{
+<div class="ttcol2-block">
+    <div class="ttcol2-block-main">
+        <a href="CTtintuc.html">
+
+            @foreach (var item in Model)
+            {
+                <div class="ttblock-img">
+                    <img src="@item.Image" alt="">
+                </div>
+                <div class="ttblock-content">
+                    <div class="ttblock-title">
+                        <h5>@item.Title</h5>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="ttblock-text">
+                        <span>Nhờ cú leak vừa rồi từ nơi sản sinh ra các thành phẩm của Converse ...</span>
+                    </div>
+                </div>
+                <div class="ttblock-box">
+                    <span class="box-date">@item.CreatedBy| @item.CreatedDate.ToString("MMM dd,yyyy")</span><br>
+                    <span class="box-month">TH3</span>
+                </div>
+            }
+            </a>
+    </div>
+</div>
+        
+}
